@@ -14,7 +14,7 @@ export const getJobs = async ({commit}) => {
 
 export const storeJob = async ({commit}, formData) => {
 	try {
-		const res = await api.post('/jobs/', formData)        
+		const res = await api.post('/jobs', formData)        
 		if (res.status === 201) {
 			router.push({ name: 'Job.show', params: { slug: res.data.data.slug } })
 			commit('notifications/ADD_NOTIFICATION', { message: 'Annuncio aggiunto correttamente' }, { root:true})
