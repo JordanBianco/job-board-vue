@@ -2,8 +2,7 @@ import axios from 'axios'
 import store from '@/store'
 
 const api = axios.create({
-	baseURL: 'https://protected-retreat-96525.herokuapp.com/api',
-	withCredentials: true
+	baseURL: 'https://protected-retreat-96525.herokuapp.com/api'
 	// baseURL: 'http://localhost:8000/api'
 })
 
